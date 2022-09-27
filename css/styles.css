@@ -8,12 +8,6 @@ html {
   scroll-behavior: smooth;
 }
 
-@media (prefres-reuced-motion) {
-  html {
-    scroll-behavior: initial;
-  }
-}
-
 body {
   margin: 0 auto;
   padding: 0;
