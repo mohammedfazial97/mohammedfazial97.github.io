@@ -27,7 +27,9 @@ video {
   height: auto;
   display: block;
 }
+
 /* nav bar styles */
+
 .nav-bar {
   display: flex;
   flex-wrap: wrap;
