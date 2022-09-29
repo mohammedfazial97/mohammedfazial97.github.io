@@ -247,11 +247,11 @@ video {
 }
 
 /* Footer Styles */
-
 .footer-copyright {
   text-align: center;
   padding-bottom: -10rem;
 }
+
 /* end footer styles */
 /* Add media Queries for large screens */
 @media (min-width: 600px) {
