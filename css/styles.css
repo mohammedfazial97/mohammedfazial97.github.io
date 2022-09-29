@@ -96,7 +96,7 @@ video {
   top: 0;
 }
 /* modeling browsers */
-@supports (position: sticky;) {
+@supports (position: sticky) {
   .top-nav {
     position: -webkit-sticky; /* Safari */
     position: sticky;
