@@ -26,6 +26,93 @@ video {
   height: auto;
   display: block;
 }
+/* nav bar styles */
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  line-height: 1rem;
+  overflow: hidden;
+  background-color: #fff;
+  z-index: 100;
+  height: 5rem;
+}
+.logo,
+.nav-menu {
+  text-transform: uppercase;
+}
+.logo,
+.nav-item {
+  white-space: nowrap;
+}
+.nav-menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5rem;
+}
+.nav-item {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 33.3%;
+  text-align: center;
+}
+.social-nav-item {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 10%;
+  padding: 0 0.2rem;
+}
+.logo a,
+.nav-menu a {
+  display: block;
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+  padding: 0.8rem;
+  color: black;
+}
+.logo a {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.nav-menu a {
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  border-bottom: 1px solid #fff;
+  transition: all ease 0.1s;
+}
+.nav-menu a:hover {
+  border-bottom: 1px solid #000;
+}
+/* top nav only styles */
+.top-nav {
+  background: none;
+  position: fixed;
+  top: 0;
+}
+/* modeling browsers */
+@supports (position: sticky;) {
+  .top-nav {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+  }
+}
+.top-nav .logo a,
+.top-nav .top-nav-menu a {
+  color: white;
+}
+.top-nav .nav-menu a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+.top-nav .nav-menu a:hover {
+  border-bottom: 1px solid #fff;
+}
+/* end nav bar styles*/
 /* Hero Styles */
 .hero-box {
   display: grid;
@@ -37,6 +124,7 @@ video {
   align-items: start;
   height: 100%;
   width: 100%;
+  margin-top: -6rem;
 }
 .hero-image-box {
   height: 100vh;
@@ -171,6 +259,17 @@ video {
     font-size: 3rem;
     line-height: 3rem;
   }
+  .nav-bar {
+    line-height: 1.5rem;
+    padding: 0 4rem;
+  }
+  .nav-menu {
+    padding: 0 1rem;
+  }
+  .nav-item {
+    flex: 1 1;
+    padding: 0 0.2rem;
+  }
 }
 @media (min-width: 920px) {
   .hero-heading {
@@ -200,5 +299,20 @@ video {
   }
   .about-container {
     max-width: 1400px;
+  }
+  .nav-bar {
+    justify-content: space-between;
+    padding: 2rem 0;
+    line-height: 1rem;
+  }
+  .nav-menu {
+    width: auto;
+    justify-self: end;
+  }
+  .nav-item {
+    padding: 0.5rem;
+  }
+  .top-nav {
+    width: 100%;
   }
 }
