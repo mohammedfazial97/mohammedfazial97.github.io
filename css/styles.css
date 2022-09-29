@@ -315,7 +315,7 @@ video {
   }
   .nav-bar {
     justify-content: space-between;
-    padding: 2rem 0;
+    padding: 0 0;
     line-height: 1rem;
   }
   .nav-menu {
