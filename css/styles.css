@@ -107,7 +107,7 @@ video {
 }
 .top-nav .logo a,
 .top-nav .top-nav-menu a {
-  color: white;
+  color: grey;
 }
 .top-nav .nav-menu a {
   border-bottom: 1px solid rgba(0, 0, 0, 0);
@@ -116,6 +116,7 @@ video {
   border-bottom: 1px solid #fff;
 }
 /* end nav bar styles*/
+
 /* Hero Styles */
 .hero-box {
   display: grid;
