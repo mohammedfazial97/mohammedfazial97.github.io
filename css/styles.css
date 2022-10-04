@@ -234,11 +234,6 @@ video {
   line-height: 2rem;
 }
 
-.about-text-para {
-  font-family: "Times New Roman", Times, serif;
-  color: black;
-}
-
 .about-image img {
   height: 100%;
   object-fit: cover;
